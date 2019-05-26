@@ -1,7 +1,7 @@
 # MiniGame1-MC
 
  ##### Status: Projekt in Work 
- ##### Progress: 10%
+ ##### Progress: 40%
 # 
 
 ### Development Plattform: 
