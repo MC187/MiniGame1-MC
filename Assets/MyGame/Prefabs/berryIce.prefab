@@ -23,8 +23,10 @@ GameObject:
   - component: {fileID: 61110507984425550}
   - component: {fileID: 50348377995915196}
   - component: {fileID: 114519980346665674}
+  - component: {fileID: 114820842062203694}
+  - component: {fileID: 114310610352686802}
   m_Layer: 0
-  m_Name: berryIce
+  m_Name: BerryIce
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1470948235684136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.6692708, z: -1}
+  m_LocalPosition: {x: 0, y: -2.6692708, z: 0}
   m_LocalScale: {x: 0.19544098, y: 0.19544098, z: 0.19544098}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,6 +90,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.39, y: 6.84}
   m_EdgeRadius: 0
+--- !u!114 &114310610352686802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470948235684136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e796eeca363bb4bc18a7356464c8291f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114519980346665674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,6 +113,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsScore: {fileID: 0}
+--- !u!114 &114820842062203694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470948235684136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e796eeca363bb4bc18a7356464c8291f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212780846411758448
 SpriteRenderer:
   m_ObjectHideFlags: 1

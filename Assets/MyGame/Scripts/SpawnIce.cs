@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class SpawnIce : MonoBehaviour 
 {
-    
-    public IceDestroy berryIce;     public GameObject flyParent;
+
+    public IceDestroy icePrefab;     public GameObject flyParent;
 
 
 
-        private void Update() {    //  SpawnIc(); }
+    public float iceMinSize = 0.1f;
+    public float iceMaxSize = 0.5f;
+
+
+    private void Update() {    //  SpawnIc(); }
 
 
     IEnumerator Start()     {         while (true)         {             yield return new WaitForSeconds(3);             SpawnIc();         }      }
 
     private void SpawnIc()     {
+        float flySize = Random.Range(iceMinSize, iceMaxSize);
 
-        IceDestroy flyClone = (IceDestroy)Instantiate(berryIce, transform.position, transform.rotation);
+        IceDestroy flyClone = (IceDestroy)Instantiate(icePrefab, transform.position, transform.rotation);
 
         float flySize = 3;
 
