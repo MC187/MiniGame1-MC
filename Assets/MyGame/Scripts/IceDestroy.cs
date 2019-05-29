@@ -5,7 +5,10 @@ using UnityEngine;
 public class IceDestroy : MonoBehaviour {
 
 
-    private void OnTriggerEnter2D(Collider2D collision)     {         if (collision.gameObject.name == "EndLine")             Destroy(gameObject);     } 
+    private void OnTriggerEnter2D(Collider2D collision)     {         if (collision.gameObject.name == "EndLine")             Destroy(gameObject);
+
+        if (collision.gameObject.name == "waffel")
+            Destroy(gameObject);     } 
 
 
 }

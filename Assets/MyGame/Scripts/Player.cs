@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
 
     private const string AXISHORIZONTAL = "Horizontal";
-    private float moveSpeed = 6.5f;
+    private float moveSpeed = 10f;
 
 
 
