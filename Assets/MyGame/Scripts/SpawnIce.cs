@@ -16,7 +16,7 @@ public class SpawnIce : MonoBehaviour
     private void Update() {    //  SpawnIc(); }
 
 
-    IEnumerator Start()     {         while (true)         {             yield return new WaitForSeconds(2);             SpawnIc();         }      }
+    IEnumerator Start()     {         while (true)         {             yield return new WaitForSeconds(8);             SpawnIc();         }      }
 
     private void SpawnIc()     {
         float flySize = Random.Range(iceMinSize, iceMaxSize);
