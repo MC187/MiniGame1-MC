@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour 
 {
-    public void LoadScene()
+    public void LoadScene(string Scene1)
     {
         SceneManager.LoadScene("Scene1");
 
-
+        // Application.LoadLevel(Scene1);  -> yt tutorial
     }
 
 
