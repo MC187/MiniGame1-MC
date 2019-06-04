@@ -239,7 +239,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 87080fe3b3dc34e7a869c98900c98f09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -664,6 +664,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1147673621}
   - component: {fileID: 1147673622}
+  - component: {fileID: 1147673623}
+  - component: {fileID: 1147673626}
+  - component: {fileID: 1147673625}
+  - component: {fileID: 1147673624}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -700,6 +704,70 @@ MonoBehaviour:
   flyParent: {fileID: 1184294917}
   iceMinSize: -6
   iceMaxSize: 6
+--- !u!114 &1147673623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147673620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf061bef4ed5b451d828106f5f4d192f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icePrefab: {fileID: 114580527760099530, guid: 5247f062acaf84b5c93459d1aec508cc,
+    type: 2}
+  flyParent: {fileID: 1184294917}
+  iceMinSize: -6
+  iceMaxSize: 6
+--- !u!114 &1147673624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147673620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf061bef4ed5b451d828106f5f4d192f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icePrefab: {fileID: 114961327930597804, guid: 2fe269dc728654c4cb5a7c2228abdec4,
+    type: 2}
+  flyParent: {fileID: 1184294917}
+  iceMinSize: -6
+  iceMaxSize: 6
+--- !u!114 &1147673625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147673620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf061bef4ed5b451d828106f5f4d192f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icePrefab: {fileID: 114821552563003376, guid: a68db96ecafa242dc84f0b530cb06cf9,
+    type: 2}
+  flyParent: {fileID: 1184294917}
+  iceMinSize: -6
+  iceMaxSize: 6
+--- !u!114 &1147673626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147673620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf061bef4ed5b451d828106f5f4d192f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icePrefab: {fileID: 114069891553096740, guid: 28caab324d45e479d97b890359f0e817,
+    type: 2}
+  flyParent: {fileID: 1184294917}
+  iceMinSize: -6
+  iceMaxSize: 6
 --- !u!1 &1184294917
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,7 +790,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1184294917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 4.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1009,7 +1077,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ed83e146c714c4e7aaa4a3f4a06cd18a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
