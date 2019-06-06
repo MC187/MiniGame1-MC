@@ -7,16 +7,21 @@ public class SpawnIce : MonoBehaviour
 
     public IceDestroy icePrefab;     public GameObject flyParent;
 
-
-
     public float iceMinSize = 0.1f;
     public float iceMaxSize = 0.5f;
+
+
+    public int berryIce = 1;
+    public int Lemon = 2;
+
+
 
 
     private void Update() {    //  SpawnIc(); }
 
 
-    IEnumerator Start()     {         while (true)         {             //if(blaubeere)
+    IEnumerator Start()     {         while (true)         {             //if(berryIce, Lemon)
+
             yield return new WaitForSeconds(2);             SpawnIc();         }      }
 
     private void SpawnIc()     {
@@ -43,3 +48,4 @@ public class SpawnIce : MonoBehaviour
 
 
 }
+
