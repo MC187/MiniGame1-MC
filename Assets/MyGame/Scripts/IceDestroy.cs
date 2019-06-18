@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class IceDestroy : MonoBehaviour {
+public class IceDestroy : MonoBehaviour 
+{
+    private const string TagEndline = "EndLine";
 
-
-    private void OnTriggerEnter2D(Collider2D collision)     {         if (collision.gameObject.name == "EndLine")             Destroy(gameObject);
+    private void OnTriggerEnter2D(Collider2D collision)     {         if (collision.gameObject.name == TagEndline)             Destroy(gameObject);
 
         else
         {
